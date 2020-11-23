@@ -6,12 +6,8 @@ import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.Button;
-import android.widget.Toast;
 
-//public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 public class MainActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,21 +28,6 @@ public class MainActivity extends AppCompatActivity{
         Button button5 = (Button) this.findViewById(R.id.button5);
         Button button6 = (Button) this.findViewById(R.id.button6);
 
-        /*
-        Button button1 = findViewById(R.id.button1);
-        Button button2 = findViewById(R.id.button2);
-        Button button3 = findViewById(R.id.button3);
-        Button button4 = findViewById(R.id.button4);
-        Button button5 = findViewById(R.id.button5);
-        Button button6 = findViewById(R.id.button6);
-
-        button1.setOnClickListener(this);
-        button2.setOnClickListener(this);
-        button3.setOnClickListener(this);
-        button4.setOnClickListener(this);
-        button5.setOnClickListener(this);
-        button6.setOnClickListener(this);
-         */
         final boolean[] tmp1 = {false};
         final boolean[] tmp2 = {false};
         final boolean[] tmp3 = {false};
@@ -103,35 +84,6 @@ public class MainActivity extends AppCompatActivity{
                 v.setBackgroundColor(tmp6[0] ? Color.RED : Color.BLUE);
             }
         });
-
-
-
+        
     }
-
-
-    /*
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.button1:
-                Toast.makeText(this, "Button 1 clicked", Toast.LENGTH_SHORT).show();
-                BruhMP.start()
-                break;
-            case R.id.button2:
-                Toast.makeText(this, "Button 2 clicked", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.button3:
-                Toast.makeText(this, "Button 3 clicked", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.button4:
-                Toast.makeText(this, "Button 4 clicked", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.button5:
-                Toast.makeText(this, "Button 5 clicked", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.button6:
-                Toast.makeText(this, "Button 6 clicked", Toast.LENGTH_SHORT).show();
-                break;
-        }
-    } */
 }
